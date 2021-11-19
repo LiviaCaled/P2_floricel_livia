@@ -1,0 +1,188 @@
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Small devices (mobile screens, 768px and down) */
+@media only screen and (max-width: 768px) {}
+
+@font-face {
+    font-family: "Raleway"; src: url("static/Raleway-Regular.ttf");
+    text-decoration: none;
+    background-color: transparent;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: auto;
+    width: 100%;
+
+}
+
+.bookiheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bookiheader img {
+    margin-left: 1%;
+    width: 10%;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    float: right;
+}
+
+.nav-list li {
+    margin-right: 50px;
+    padding: 20px;
+    text-decoration: none;
+
+}
+
+.nav-list li a {
+    text-decoration: none;
+}
+
+.allbookiphotos {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.wrap-accommodations {
+    width: 85%;
+    background-color: #f2f2f2;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+}
+
+  .hotels {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popular-hotels {
+    width: 45%;
+}
+
+.hotel1 {
+    width: 30%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 20px 20px 30px 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0.205);
+}
+
+.hotel1 img {
+    height: 125px;
+}
+
+.most-popular {
+    height: 720px;
+    display: flex;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 35%;
+    padding: 20px;
+}
+
+.image {
+   width: 100%;
+   border-radius: 20px 20px 0px 0px;
+   
+}
+.hotel {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0.205);
+    margin: 0px 20px 25px 50px;
+    width: 400px;
+}
+
+.hotel img {
+    height: 100px;
+    width: 90px;
+    border-width: 4px;
+    border-color: white;
+    border-style: solid;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+
+.img_allbookiphotos {
+    object-fit: cover;
+    width: 100%;
+    min-width: 150px;
+    max-width: 300px;
+    height: 200px;
+  }
+
+  #marseille-accommodations h1 {
+    padding-top: 2px;
+    padding-left: 32px;
+    margin-bottom: 5px;
+  }
+
+  #most-popular h2 {
+    padding-top: 20px;
+    padding-left: 32px;
+  }
+
+  .most-popular img {
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+    height: 140px;
+    width: 200px;
+  }
+
+  .popular-image img {
+      margin-right: 15px;
+      float: left;
+  }
+
+  .popular-image h2 {
+      margin-left: 15px;
+      display: block;
+      margin: 2px 0 0 0;
+  }
+
+  .checked {
+    color: blue;
+  }
+
+  .price {
+        margin-left: 10px;
+      }
+
+.search {
+    display: flex;
+}
+
+/*.topnav input[type=text] {
+    float: left;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 20px;
+    border: 20px;
+    font-size: 17px;
+}
+
+

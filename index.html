@@ -1,12 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0/">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.11.0/build/cssnormalize/cssnormalize-min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/14f3c90747.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Booki</title>
 </head>
-<body>
-    
+
+<!-- body (everything about the page)-->
+
+<body> 
+
+<!--Logo and navigation bar -->
+
+<header> 
+    <div class="bookiheader">
+    <img src="images/logo/Booki.png" alt="Booki">
+        <ul class="nav-list">
+            <li> 
+                <a href="#" class="accomodations">Acommodations</a>
+            </li>
+            <li> 
+                <a href="#"class="activities">Activities</a>
+            </li>
+        </ul>
+    </div>
+
+<!-- Text-->
+
+<div class="dreamvacation">
+    <h2> Find your dream vacation</h2>
+    <p>Downtown or in nature</p>
+</div>
+
+<!-- Search bar -->
+
+<div class="search">
+    <a class="active" href="#">Search</a>
+    <input type="text" placeholder="Marseille, France">
+      
+</div>
+
+<!--Filters-->
+
+<div class="filters">
+    <h2>Filters</h2>
+</div>
+
+</header>
+
+<!--Main content-->
+<div class="allbookiphotos">
+    <section>
+    <div class ="wrap-accommodations">
+        <div id="marseille-accommodations">
+             <h2>Accommodations in Marseille</h2>
+<!--hotels-->
+             <article class="hotels">
+            
+
+            <div class="hotel1">
+                <a href="#">
+                <img class ="image" src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                <div class="price">
+                    <h2>Auberge la Cannebiere</h2>
+                    <p>Night starting at <b>25€</b></p>
+                  </div>
+        </div>
+            <div class="hotel1">
+                <a href="#">
+                <img class="image" src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                <div class="price">
+                    <h2>Hotel du Port</h2>
+                    <p>Night starting at <b>52€</b></p>
+                  </div>
+        </div>
+            <div class="hotel1">
+                <a href="#">
+                <img class="image" src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                <div class="price">
+                    <h2>Les mouettes Hotel</h2>
+                    <p>Night starting at <b>76€</b></p>
+                  </div>
+        </div>
+            <div class="hotel1">
+                <a href="#">
+                <img class="image" src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                <div class="price">
+                    <h2>Hotel de la Mer</h2>
+                    <p>Night starting at <b>46€</b></p>
+                  </div>
+            </div>
+            <div class="hotel1">
+                <a href="#">
+                <img class="image" src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                <div class="price">
+                    <h2><b>Auberge la Panier</b></h2>
+                    <p>Night starting at <b>23€</b></p>
+                  </div>
+            </div>
+            <div class="hotel1">
+                <a href="#">
+                <img class="image" src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                <div class="price">
+                    <h2>Hotel chez Amina</h2>
+                    <p>Night starting at <b>96€</b></p>
+                  </div>
+                
+            </div>
+            
+        </article>
+        <div class="showmore">
+            <a href="#">Show more</a>
+        </div>
+        </div>
+        </section>
+
+<!-- most popular -->
+  
+      <div class ="most-popular">
+        <div id="most-popular">
+        <h2>Most popular</h2>
+        <article class="popular-hotels">
+
+        <div class="hotel">
+            <a href="#">
+            <img class="popular-image" src="./images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+            <figcaption class="best-hotels">
+                <p class="review-hotel"><a href="">Morning Sun Hotel</a></p>
+                <p class="review_price">Night starting at 128<span class="bold">€</span></p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                    
+            </figcaption>
+        </div>
+
+            <div class="hotel">
+                <a href="#">
+                <img class="popular-image" src="./images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                <figcaption class="best-hotels">
+                    <p class="review-hotel"><a href="">Au coeur de l'eau Bed and Breakfast</a></p>
+                    <p class="review-price">Night starting at 71<span class="bold">€</span></p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+        </div>
+
+        <div class="hotel">
+            <a href="#">
+                <img class="popular-image" src="./images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                <figcaption class="best-hotels">
+                    <p class="review-hotel"><a href="">Tout Bleu and Blanc Hotel</a></p>
+                    <p class="review-price">Night starting at 68<span class="bold">€</span></p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+        </div>
+        </article>
+    </div>
+
+    </div>
+</div>
+
+<!-- Activities in Marseille-->
+
+    <section class="activities">
+        <h2 id="Activities"> Activities in Marseille</h2>  
+    </section>
+
+
+
+<!--Footer-->
+
+<footer>
+
+<!--About-->
+
+    <div class="info-site">
+        <h3>About</h3>
+        <a href="#" class="site-map">Site map</a>
+        <a href="#" class="terms">Terms and conditions</a>
+        <a href="#" class="data">Data and privacy</a>
+
+    </div>
+<!--Our accommodations-->
+
+<div class="our-accommodations">
+    <h3>Our accommodations</h3>
+    <a href="#" class="quality">Quality assessment</a>
+    <a href="#" class="have-a-hotel">You have a hotel?</a>
+</div>
+
+<!--Assistance-->
+
+<div class="assistance">
+    <h3>Assistance</h3>
+    <a href="#" class="help-desk">Help desk</a>
+    <a href="#" class="contact">Contact us</a>
+</div>
+</footer>
+
 </body>
+
+</html>
+
+
+<!-- header -->
+
+
+<!--<header>
+    <div class="site-header">
+        <nav>
+        <img src="file:///home/livia/Desktop/P2_floricel_livia/images/logo/Booki.png" alt="Booki"/>
+        <a href="link" class="col2">Accommodations</a>
+        <a href="link2" class="col3">Activities </a>
+        </nav>
+        </div>
+
+        </header>
+        
+    <!---<nav>
+    <ul>
+        <li><a href="">Accommodations</a></li>
+        <li><a href="">Activities</a></li>
+      </ul> 
+      </nav>
+    </div> --->
+
+   <!-- <div class="text">
+        <div class="one"> Downtown or in nature</div>
+        <div class="two"> Find a place for your dream vacation </div>
+    </div>
+    </header>
+</header> 
+
+<body>
+    <div class="wrapper site-header_wrapper">
+    <div class="topnav">
+        <a class="active" href=""></a>
+        <input type="text" placeholder="Marseille, France">
+      </div>
+    
+      <div class="container">
+      <div class="filters">Filters</div>
+      <div class="info">More than 500 accomodations are available in this city </div>
+
+    <div class="Accommodations">
+        <div class="col">Acommodations box</div>
+    </div>
+    
+</body> 
+
+<footer>
+    <div class="wrapper site-header_wrapper"></div>
+    <footer class="footer"> 
+        <section>
+            <ul><h5>About</h5>
+                <li>Site Map</li>
+                <li>General Terms and Conditions</li>
+                <li>Data and Privacy</li>
+            </ul>
+            <ul><h5>Our Accommodations</h5>
+                <li>Quality Assessment</li>
+                <li>You have a hotel?</li>
+            </ul>
+            <ul><h5>Assistance</h5>
+                <li>Help Desk</a></li>
+                <li>Contact Us</a></li>
+            </ul>
+        </section>
+    </footer>
 </html>
