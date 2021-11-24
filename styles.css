@@ -426,26 +426,43 @@ body {
     width: 100%;
 }
 
+/*footer */
+
 
 .footer-holder{
     display: flex;
     align-items: flex-start;
-    margin: auto;
-    width: 100%;
-    gap: 20%;
-    background-color: #f2f2f2;
     margin-top: 5%;
+    width: 100%;
+    gap: 10%;
+    background-color: #f2f2f2;
+    padding-bottom: 2%;
+}
+
+.info-site {
+    padding-top: 20px;
+    margin-left: 6%;
 }
 
 .info-site li a{
     text-decoration: none;
+    color: black;
 }
 
 .info-site ul {
     list-style-type: none;
+    line-height: 30px;
 }
 
 #about {
+    margin-left: 35px;
+}
+
+#our-accommodations {
+    margin-left: 35px;
+}
+
+#assistance {
     margin-left: 35px;
 }
    
