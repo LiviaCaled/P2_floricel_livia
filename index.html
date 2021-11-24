@@ -17,7 +17,9 @@
 <body> 
 
 <!--Logo and navigation bar -->
+
 <header> 
+    <div class="header-holder">
     <div class="bookiheader">
     <img src="images/logo/Booki.png" alt="Booki">
         <ul class="nav-list">
@@ -32,19 +34,41 @@
 
     <!-- Text-->
     <div class="dreamvacation">
-        <h2> Find your dream vacation</h2>
+        <h1> Find a place for your dream vacation</h1>
         <p>Downtown or in nature</p>
     </div>
 
     <!-- Search bar -->
     <div class="search">
-        <a class="active" href="#">Search</a>
-        <input type="text" placeholder="Marseille, France">        
+        <div class="small-icon">
+            <i class="fas fa-map-marker-alt"></i>
+            </i>
+        </div>
+        <input type="text" placeholder="Marseille, France" name="search">
+        <button type="submit">Search</button>        
     </div>
 
     <!--Filters-->
-    <div class="filters">
+    <div class="filters-holder">
         <h2>Filters</h2>
+        <div class="filters">
+    <h3>
+        <i class="fas fa-money-bill-wave"></i> Low cost</h3>
+    <h3>
+     <i class="fas fa-child"></i> Family-friendly</h3>
+<h3>
+    <i class="fas fa-heart"></i> Romantic</h3>
+<h3>
+<i class="fas fa-dog"></i> Pets allowed</h3>
+</div>
+
+</div>
+  
+
+
+    <!--Info-->
+    <div class="info">
+        <p><i class="fas fa-info"></i>More than 500 accomodations are available in this city</p>
     </div>
 </header>
 
@@ -246,7 +270,7 @@
 
 <footer class="footer-holder">
         <div class="info-site">
-            <h3>About</h3>
+            <h3 id="about">About</h3>
             <ul>
             <li><a href="#">Site map</a></li>
             <li><a href="#">General Terms and Conditions</a></li>
