@@ -1,37 +1,117 @@
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
-
-/* Medium devices (tablets landscape, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .marseille-accommodations {
-        width: 60%;}
-    .most-popular {
-        width: 25%;}
-}
-
-/* Tabled Portrait */
-@media screen and (max-width: 768px) {
-    .marseille-accommodations {
-        width: 100%;
-    }
-    .most-popular {width: 100%; margin: 0; border: none;}
-}
-
-/* Small devices (mobile screens, 768px and down) */
-@media only screen and (max-width: 768px) {
-    .most-popular, .marseille-accommodations{
-        flex: 100%;
-    }
-}
-
-
 @font-face {
     font-family: "Raleway"; src: url("static/Raleway-Regular.ttf");
     text-decoration: none;
     background-color: transparent;
 }
+
+/*Responsive layout*/
+
+
+/* Large devices (laptops and desktops, 992 and up) */
+@media only screen and (min-width: 992px) {
+    .bookiheader img {
+        flex-grow: 1;
+    }
+
+    .footer-holder {
+        flex-wrap: wrap;
+    }
+}
+
+/* Medium devices (tablets - 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .all-accomodations {
+        flex-direction: row-reverse;
+    }
+
+    .most-popular {
+        order: 1;
+        min-width: 650px;
+    }
+
+    .marseille-accommodations {
+        order:2;
+        min-width: 680px;
+
+    }
+
+    .filters-holder{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-width: 680px;
+        margin-left: 6%;
+    }
+
+    .filters {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        min-width: 680px;
+    }
+
+    .bookiheader img {
+        flex-grow: 0.1;
+    }
+
+    .footer-holder {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* Small devices (mobile screens, 768px and down) */
+@media only screen and (max-width: 768px) {
+	.all-accomodations {
+        flex-direction: row-reverse;
+    }
+
+    .most-popular {
+        order: 1;
+        min-width: 500px;
+    }
+
+    .marseille-accommodations {
+        order:2;
+        min-width: 500px;
+
+    }
+
+    .filters-holder{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-width: 400px;
+        margin-left: 6%;
+    }
+
+    .filters {
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content: flex-start;
+        min-width: 400px;
+        gap: 2px;
+    }
+
+    .bookiheader {
+        flex-wrap: wrap;
+        align-items: left;
+    }
+
+    .bookiheader img {
+        flex-grow: 0.1;
+    }
+
+
+    .footer-holder {
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* Page */
 
 body {
     display: block;
@@ -289,22 +369,33 @@ body {
 }
 
 .hotel {
-    background-color: white;
+    position: relative;
     border-radius: 20px;
     padding: 5px;
     box-shadow: 1px 1px #c7c7c7;
     margin: 0px 20px 25px 20px;
     width: 340px;
+    height: 180px;
+    overflow: hidden;
+    background-color: white;
 }
 
 .popular-image {
-    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+.best-hotel figcaption{
+    float: right;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
 }
 
 .image {
    width: 100%;
-   border-radius: 20px 20px 0px 0px;
-   
+   border-radius: 20px 20px 0px 0px; 
 }
 
   .most-popular h2 {
@@ -316,9 +407,8 @@ body {
   .most-popular img {
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
-    height: 170px;
-    width: 140px;
-    float: left;
+    float: left;   
+    width: 40%;
   }
 
 
@@ -328,8 +418,11 @@ body {
     margin-left: 5%;
   }
 
-  .best-hotels {
+  .best-hotels figcaption {
     margin-left: 45%;
+    position: absolute;
+    height: 100%;
+    width: 60%;
 }
 
   .checked {
@@ -341,10 +434,6 @@ body {
 
 
 /*Activities in Marseille*/
-
-.activities-holder {
-
-}
 
 .activities-holder h2 {
     padding-left: 6%;
