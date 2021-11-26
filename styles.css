@@ -12,11 +12,7 @@
     .bookiheader img {
         flex-grow: 1;
     }
-
-    .bookiheader {
-        margin-top: 3%;
-    }
-
+    
     .footer-holder {
         flex-wrap: wrap;
     }
@@ -116,9 +112,13 @@
         gap: 2px;
     }
 
+    .filters h3 {
+        margin: 1px;
+    }
+
     .bookiheader {
         flex-wrap: wrap;
-        align-items: left;
+        margin-left: 2px;
     }
 
     .bookiheader img {
@@ -129,7 +129,12 @@
     .footer-holder {
         flex-direction: column;
     }
-}
+
+    .activities-holder h2 {
+        margin-left: 20%;
+    }
+
+    }
 
 
 
@@ -361,16 +366,34 @@ body {
 }
 
    .hotel1 {
+    position: relative;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     box-shadow: 1px 1px #c7c7c7;
+    width: 280px;
+    overflow: hidden;
 }
 
    .hotel1 img {
-    height: 140px;
-    width: 300px;
     object-fit: cover;
+}
+
+.image {
+    height: 140px;
+}
+
+.marseille-accommodations img {
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+
+.best-hotels1 figcaption{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    position: absolute;
 }
 
 
