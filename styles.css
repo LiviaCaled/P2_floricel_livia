@@ -13,6 +13,10 @@
         flex-grow: 1;
     }
 
+    .bookiheader {
+        margin-top: 3%;
+    }
+
     .footer-holder {
         flex-wrap: wrap;
     }
@@ -26,27 +30,38 @@
 
     .most-popular {
         order: 1;
-        min-width: 650px;
+        min-width: 700px;
     }
 
     .marseille-accommodations {
         order:2;
-        min-width: 680px;
+        min-width: 700px;
 
+    }
+
+    .activities-holder {
+        min-width: 700px;
+        margin-right: 2%;
+        margin-left: 2%;
     }
 
     .filters-holder{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        min-width: 680px;
+        min-width: 700px;
         margin-left: 6%;
+    }
+
+    .hotel {
+        min-width: 500px;
     }
 
     .filters {
         flex-wrap: wrap;
         justify-content: flex-start;
         min-width: 680px;
+        gap: 2px;
     }
 
     .bookiheader img {
@@ -75,6 +90,14 @@
         order:2;
         min-width: 500px;
 
+    }
+
+    .hotel {
+        min-width: 400px;
+    }
+
+    .hotel1 {
+        min-width: 400px;
     }
 
     .filters-holder{
