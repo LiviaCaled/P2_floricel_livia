@@ -367,7 +367,7 @@ body {
     font-weight: bold;
 }
 
-/* Acommodations in Marseille */
+/* Accommodations in Marseille */
 
 .marseille-accommodations {    
     width: 60%;
@@ -429,6 +429,15 @@ body {
     position: absolute;
 }
 
+.review-hotel a {
+    text-decoration: none;
+    color: black;
+}
+
+.best-hotels1 {
+    line-height: 10px;
+}
+
 
 /* Most popular */
 
@@ -464,7 +473,7 @@ body {
     position: relative;
 }
 
-.best-hotel figcaption{
+.best-hotels figcaption{
     float: right;
     width: 60%;
     height: 100%;
@@ -517,6 +526,19 @@ body {
   .checked {
     color: blue;
   }
+
+  .unchecked {
+      color: grey;
+  }
+
+ .best-hotels {
+    padding-left: 45%;
+}
+
+.name-hotel a {
+  text-decoration: none;
+  color: black;
+}
 
 
 
