@@ -8,7 +8,7 @@
 
 
 /* Large devices (laptops and desktops, 992 and up) */
-@media only screen and (min-width: 1024px) and (max-width: 1280) {
+@media only screen and (min-width: 993px) {
     .bookiheader img {
         flex-grow: 1;
     }
@@ -19,7 +19,7 @@
 }
 
 /* Medium devices (tablets - 769px and up) */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
     .all-accomodations {
         flex-direction: row-reverse;
     }
@@ -32,13 +32,34 @@
     .marseille-accommodations {
         order:2;
         min-width: 700px;
+    }
 
+    .text-icon {
+        display: flex;
+        align-items: baseline;
+        gap: 15%;
     }
 
     .activities-holder {
-        min-width: 700px;
         margin-right: 2%;
         margin-left: 2%;
+    }
+
+    .activities-gallery {
+        display: flex;
+        min-width: 700px;
+    }
+
+    .act_box_big {
+        max-width: 330px;
+    }
+
+    .act_box_small_holder{
+        max-width: 330px;
+    }
+
+    .photo-landscape{
+        border-top-right-radius: 20px;
     }
 
     .filters-holder{
@@ -60,6 +81,10 @@
         gap: 2px;
     }
 
+    .filters-holder h2 {
+        padding-left: 1%;
+    }
+
     .bookiheader img {
         flex-grow: 0.1;
     }
@@ -79,36 +104,26 @@
 
     .most-popular {
         order: 1;
-        min-width: 500px;
+        min-width: 350px;
     }
 
-    .marseille-accommodations {
+    .marseille-accommodations{
         order:2;
-        min-width: 500px;
-
-    }
-
-    .hotel {
-        min-width: 400px;
-    }
-
-    .hotel1 {
-        min-width: 400px;
+        min-width: 350px;
     }
 
     .filters-holder{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        min-width: 400px;
+        min-width: 200px;
         margin-left: 6%;
     }
 
     .filters {
-        flex-direction: column;
         flex-wrap:wrap;
         justify-content: flex-start;
-        min-width: 400px;
+        min-width: 200px;
         gap: 2px;
     }
 
@@ -141,6 +156,17 @@
         padding-bottom: 10px;
     }
 
+    .dreamvacation{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        max-width: 300px;
+    }
+
    .accomodations {
         padding-left: 30%;
         padding-right: 30%;
@@ -153,16 +179,36 @@
         margin-top: 10px;
     }
 
+    .activities-holder h2 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .activities-holder {
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+
+    .activities-gallery {
+        display: flex;
+        min-width: 300px;
+    }
+
+    .act_box_big {
+        min-width: 300px;
+    }
+
+    .act_box_small_holder{
+        min-width: 300px;
+    }
 
     .footer-holder {
         flex-direction: column;
     }
 
-    .activities-holder h2 {
-        margin-left: 20%;
     }
 
-    }
+
 
 /* Page */
 
@@ -176,7 +222,7 @@ body {
 .header-holder {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 }
 
 .bookiheader {
@@ -223,12 +269,12 @@ body {
 
 .dreamvacation {
     margin-left: 6%;
-    line-height: 50%;
     font-size: 12px;
 }
 
 .dreamvacation p {
     font-size: 16px;
+    margin-top: -10px;
 }
 /* Search bar */
 
@@ -290,7 +336,6 @@ body {
 
 .filters-holder {
     display: flex;
-    align-items: center;
     margin-left: 6%;
 }
 
@@ -308,7 +353,8 @@ body {
 
 .filters-holder h2 {
     font-size: 20px;
-    margin-right: 2%;
+    padding-top: 10px;
+    padding-right: 30px;
 }
 
 .filters p {
@@ -376,7 +422,7 @@ body {
 .marseille-accommodations h2 {
     padding-top: 3%;
     padding-bottom: 2%;
-    padding-left: 4%;
+    padding-left: 8%;
   }
   
 
@@ -568,14 +614,16 @@ body {
     object-fit: cover;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-
 }
 
 .act_box_big {
+    position: relative;
     background-color: white;
-    box-shadow: 1px 1px 5px #f2f2f2; 
+    box-shadow: 0px 3px 3px 1px #f2f2f2;
     border-radius: 25px;
     height: 100%;
+    width: 380px;
+    overflow: hidden;
 }
 
 .act_box_big img {
@@ -591,13 +639,19 @@ body {
     display: flex;
     flex-direction: column;
     gap: 45px;
+    width: 370px;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0px 12px 12px -12px #d9d9d9;
 }
 
 .act_box_small {
+    position: relative;
     height: 30%;
     background-color: white;
-    box-shadow: 1px 1px 5px #f2f2f2;
+    box-shadow: 0px 3px 3px 1px#f2f2f2;
     border-radius: 25px;
+    width: 370px;
 }
 
 .act_box_small img {
