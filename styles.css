@@ -1,14 +1,12 @@
 @font-face {
     font-family: "Raleway"; src: url("static/Raleway-Regular.ttf");
-    text-decoration: none;
-    background-color: transparent;
 }
 
 /*Responsive layout*/
 
 
 /* Large devices (laptops and desktops, 992 and up) */
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 992px) {
     .bookiheader img {
         flex-grow: 1;
     }
@@ -19,7 +17,7 @@
 }
 
 /* Medium devices (tablets - 769px and up) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 991px) {
     .all-accomodations {
         flex-direction: row-reverse;
     }
@@ -256,13 +254,16 @@ body {
 }
 
 .accomodations {
-    color: blue;
+    color: black;
 }
 
 .activities {
     color: black;
 }
 
+.nav-list a:hover {
+    color: blue;
+}
 .nav-list li a {
     text-decoration: none;
 }
@@ -344,6 +345,10 @@ body {
     padding: 16px;
     background-color: #DEEBFF;
     border-radius: 20px;
+}
+
+.filters p:hover {
+    background-color:  #DEEBFF;
 }
 
 .filters .fa-child {
