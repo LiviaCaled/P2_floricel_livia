@@ -8,18 +8,19 @@
 /* Large devices (laptops and desktops, 992 and up) */
 @media only screen and (min-width: 992px) {
 
+    .nav-list li a:hover {
+        border-top: 3px #0065FC solid;
+        padding-top: 20px;
+        color: #0065FC;
+    }
+
     .footer-holder {
         flex-wrap: wrap;
     }
 
     .hotel {
-        min-width: 250px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .most-popular {
-        min-width: 300px;
     }
 
     .hotel1 {
@@ -34,29 +35,50 @@
     .text-icon i {
         margin-right: 5%;
     }
+
+    .activities-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 /* Medium devices (tablets - 769px and up) */
-@media only screen and (min-width: 769px) and (max-width: 991px) {
+@media only screen and (min-width: 769px) and (max-width: 800px) {
+    .nav-list li a:hover {
+        border-top: 2px #0065FC solid;
+        padding-top: 20px;
+        color: #0065FC;
+    }
+
+    .nav-list li {
+        margin-top: 5%;
+    }
+
+    .bookiheader img {
+        width: 120px;
+    }
+
+    .search {
+        width: 90%;
+    }
+
     .all-accomodations {
-        flex-direction: row-reverse;
-    }
-
-    .most-popular {
-        order: 1;
-        min-width: 700px;
-        margin-bottom: 25px;
-    }
-
-    .marseille-accommodations {
-        order:2;
-        min-width: 700px;
-    }
-
-    .text-icon {
         display: flex;
-        align-items: baseline;
-        gap: 15%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .hotels_holder {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .most-popular .text-icon {
+        display: flex;
+        justify-content: space-evenly;
+        padding-right: 5%;
     }
 
     .activities-holder {
@@ -66,56 +88,186 @@
 
     .activities-gallery {
         display: flex;
-        min-width: 700px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .act_box_big {
-        max-width: 330px;
+    .activities-gallery .act_box_big {
+        width: 340px;
     }
 
-    .act_box_small_holder{
-        min-width: 330px;
-    }
-
-    .photo-landscape{
-        border-top-right-radius: 20px;
+    .act_box_small_holder {
+        width: 350px;
     }
 
     .filters-holder{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        min-width: 700px;
-        margin-left: 6%;
-    }
-
-    .hotel {
-        min-width: 500px;
+        max-width: 100%;
     }
 
     .filters {
         flex-wrap: wrap;
         justify-content: flex-start;
-        min-width: 100%;
+        max-width: 100%;
     }
 
     .filters-holder h2 {
         padding-left: 1%;
     }
 
+    .footer-holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:start;
+    }
+
+}
+
+@media only screen and (min-width: 801px) and (max-width: 991px) {
+    .nav-list li a:hover {
+        border-top: 3px #0065FC solid;
+        padding-top: 20px;
+        color: #0065FC;
+    }
+
+    .nav-list li {
+        margin-top: 5%;
+    }
+
     .bookiheader img {
-        flex-grow: 0.1;
+        width: 120px;
+    }
+
+    .filters-holder{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 100%;
+    }
+
+    .filters {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        max-width: 100%;
+    }
+
+    .filters-holder h2 {
+        padding-left: 1%;
     }
 
     .footer-holder {
         flex-wrap: wrap;
     }
 
+    .hotel {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hotel1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-icon {
+        align-items: baseline;
+    }
+
+    .text-icon i {
+        margin-right: 5%;
+    }
+
+    .activities-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+   .act_box_big {
+        width: 360px;
+    }
+
+    .act_box_small_holder {
+        width: 360px;
+    }
 }
 
 
 /* Small devices (mobile screens, 768px and down) */
 @media only screen and (max-width: 768px) {
+    .filters-holder{   
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .filters-holder h2 {
+        font-size: 18px;
+    }
+
+    .filters {
+        flex-wrap:wrap;
+        justify-content: flex-start;
+        max-width: 100%;
+        gap: 2px;
+    }
+
+    .filters p {
+        margin: 1px;
+    }
+
+    .bookiheader {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .bookiheader .nav-list li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .bookiheader img {
+        width: 120px;
+        height: 50px;
+    }
+
+    .nav-list li {
+        border-bottom: solid #f2f2f2;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .nav-list li a:hover {
+        align-items: flex-end;
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 10px;
+    }
+
+    .dreamvacation{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dreamvacation h1 {
+        font-size: 20px;
+    }
+
+    .search input{
+        display: flex;
+        justify-content: center;
+        border: solid #f2f2f2;
+    }
+
+    .top-holder .search {
+        width: 330px;
+    }
+
 	.all-accomodations {
         flex-direction: row-reverse;
     }
@@ -125,15 +277,6 @@
         min-width: 100%;
         margin-right: auto;
         margin-left: auto;
-    }
-
-    .hotel {
-        min-width: 330px;
-    }
-
-    .hotel1 {
-        min-width: 330px;
-        max-height: 220px;
     }
 
     .best-hotels1 h4{
@@ -152,8 +295,6 @@
     .marseille-accommodations {
         order:2;
         min-width: 100%;
-        margin-right: 5%;
-        margin-left: 5%;
     }
 
     .all-accomodations .marseille-accommodations {
@@ -176,126 +317,60 @@
     }
 
     #showmore h3 {
+        margin-top: -2px;
         font-size: 18px;
     }
 
     .hotels_holder {
-        min-width: 100%;
+        max-width: 100%;
     }
 
-    .filters-holder{   
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        min-width: 300px;
-        margin-left: 6%;
+    .hotels_holder figure {
+        min-width: 320px;
     }
 
-    .filters-holder h2 {
-        font-size: 18px;
-    }
-
-    .filters {
-        flex-wrap:wrap;
-        justify-content: flex-start;
-        min-width: 300px;
-        gap: 2px;
-    }
-
-    .filters p {
-        margin: 1px;
-    }
-
-    .bookiheader {
-        flex-wrap: wrap;
+    .hotels_holder {
         justify-content: center;
-    }
-
-    .bookiheader li {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .bookiheader img {
-        flex-grow: 0.2;
-    }
-
-    .nav-list {
-        border-bottom: solid #f2f2f2;
-        width: 100%;
-        padding-bottom: 10px;
-    }
-
-    .nav-list li a:hover {
-        align-items: flex-end;
-        border-bottom: 2px solid #0065FC;
-        padding-bottom: 10px;
-    }
-
-    .dreamvacation{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .dreamvacation h1 {
-        font-size: 20px;
-    }
-
-    .search {
-        display: flex;
-        justify-content: center;
-        min-width: 300px;
-        border: solid #f2f2f2;
-    }
-
-   .accomodations {
-        padding-left: 30%;
-        padding-right: 30%;
-        margin-top: 10px;
-    }
-
-    .activities {
-        padding-right: 40%;
-        padding-left: 40%;
-        margin-top: 10px;
-    }
-
-    .activities-holder h2 {
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .activities-holder {
-        margin-right: 5%;
-        margin-left: 5%;
     }
 
     .activities-gallery {
         display: flex;
-        min-width: 330px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .act_box_small_holder {
+        display: flex;
+        align-items: center;
+    }
+
+    .act_box_small_holder figure {
+        width: 330px;
+    }
+
+    .act_box_big .photo-portrait{
+        height: 150px;
+    }
+
+    .activities-gallery .act_box_small img {
+        object-fit: cover;
+        height: 150px;
     }
 
     .act_box_big {
         min-width: 330px;
     }
 
-    .act_box_big .photo-portrait{
-        height: 170px;
-    }
-
-    .act_box_small_holder{
+    .act_box_small_holder .act_box_small{
         min-width: 330px;
     }
 
-    .act_box_small .photo-landscape {
-        width: 100%;
+    .act_box_small_holder .act_box_small1 {
+        min-width: 330px;
     }
-
-    .footer-holder {
+    
+    .info {
+        display: flex;
         flex-direction: column;
     }
 
@@ -322,10 +397,6 @@ header {
     margin-top: 1%;
 }
 
-.bookiheader img {
-    width: 170px;
-}
-
 .nav-list {
     width: 30%;
     display: flex;
@@ -339,12 +410,6 @@ header {
     margin-right: 10%;
     padding-left: 20%;
 }
-
-.nav-list li a:hover {
-        border-top: 3px #0065FC solid;
-        padding-top: 20px;
-        color: #0065FC;
-    }
 
 .accomodations {
     color: black;
@@ -382,7 +447,7 @@ header {
     justify-content: space-between;
     border: solid #f2f2f2;
     height: 55px;
-    Width: 25%;
+    Width: 380px;
     border-radius: 20px;
 }
 
@@ -408,11 +473,11 @@ header {
     border: none;
     text-align: start;
     padding-left: 2%;
+    width: 100%;
 }
 
 .search button {
-    width: 150px;
-    height: 55px;
+    padding: 17px 19px 17px 19px;
     font-size: 16px;
     font-weight: bold;
     color: white;
@@ -472,7 +537,7 @@ header {
 
 /* Info - more than 500 accommodations available in this city */
 
-.info i {
+.info-top i {
     border: 2px;
     border-style: solid;
     border-color: #f2f2f2;
@@ -523,10 +588,7 @@ header {
 }
   .hotels_holder{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 3%;
-    padding-right: 3%;
 }
 
    .hotel1 {
@@ -535,7 +597,7 @@ header {
     border-radius: 20px;
     padding: 5px;
     box-shadow: 1px 1px 1px 1px #c7c7c7;
-    width: 280px;
+	width: 280px;
     overflow: hidden;
 }
 
@@ -687,7 +749,6 @@ header {
 .activities-gallery {
     display: flex;
     width: 100%;
-    justify-content: center;
 }
 
 .photo-portrait {
