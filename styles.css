@@ -1,6 +1,8 @@
-@font-face {
-    font-family: "Raleway"; src: url("static/Raleway-Regular.ttf");
-}
+
+  
+* {
+    font-family: 'Raleway', sans-serif;
+    }
 
 /*Responsive layout*/
 
@@ -198,6 +200,73 @@
 
 /* Small devices (mobile screens, 768px and down) */
 @media only screen and (max-width: 768px) {
+    header {
+        width: 100%;
+    }
+    
+    .bookiheader { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .nav-list {
+        min-width: 100%;
+    }
+
+    .bookiheader ul{
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 10px;
+    }
+
+    .nav-list a:hover{
+        border-top: none;
+        align-items: center;
+        border-bottom: 5px solid #0065FC;
+        padding-bottom: 10px;
+    }
+
+    .accomodations {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .activities {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .list-header {
+        width: 50%;
+    }
+       
+    .bookiheader img {
+        width: 50%;
+        padding-bottom: 20px;
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+
+    .dreamvacation{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dreamvacation h1 {
+        font-size: 20px;
+    }
+
+    .search input{
+        display: flex;
+        justify-content: center;
+        border: solid #f2f2f2;
+    }
+
+    .top-holder .search {
+        width: 330px;
+    }
+
     .filters-holder{   
         display: flex;
         flex-direction: column;
@@ -219,53 +288,6 @@
 
     .filters p {
         margin: 1px;
-    }
-
-    .bookiheader {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .bookiheader .nav-list li {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .bookiheader img {
-        width: 120px;
-        height: 50px;
-    }
-
-    .nav-list li {
-        border-bottom: solid #f2f2f2;
-        width: 100%;
-        padding-bottom: 10px;
-    }
-
-    .nav-list li a:hover {
-        align-items: flex-end;
-        border-bottom: 2px solid #0065FC;
-        padding-bottom: 10px;
-    }
-
-    .dreamvacation{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .dreamvacation h1 {
-        font-size: 20px;
-    }
-
-    .search input{
-        display: flex;
-        justify-content: center;
-        border: solid #f2f2f2;
-    }
-
-    .top-holder .search {
-        width: 330px;
     }
 
 	.all-accomodations {
@@ -376,6 +398,7 @@
 
     }
 
+
 /* Page */
 
 
@@ -385,8 +408,6 @@ body {
 }
 
 header {
-    margin-left: 3.5%;
-    margin-right: 3.5%;
     margin-bottom: 2%;
 }
 
@@ -397,18 +418,23 @@ header {
     margin-top: 1%;
 }
 
+.bookiheader img {
+    width: 170px;
+    height: 70px;
+    margin-left: 3.5%;
+}
+
+.dreamvacation {
+    margin-left: 3.5%;
+} 
+
 .nav-list {
     width: 30%;
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     margin-top: 1%;
-}
-
-.nav-list li {
-    margin-right: 10%;
-    padding-left: 20%;
 }
 
 .accomodations {
@@ -618,7 +644,6 @@ header {
     position: absolute;
     background-color: white;
     width: 100%;
-    position: absolute;
 }
 
 .review-hotel a {
@@ -680,19 +705,23 @@ header {
 }
 
   .most-popular h2 {
-    padding-left: 12%;
+    padding-left: 13%;
     padding-top: 5%;
     padding-bottom: 3%;
   }
 
   .text-icon {
       display: flex;
-      align-items: baseline;
+      align-items: center;
+      justify-content: space-between;
   }
 
   .most-popular i {
       font-size: 30px;
-      padding-left: 32%;
+  }
+
+  .text-icon i {
+      margin-right: 10%;
   }
 
   .most-popular img {
