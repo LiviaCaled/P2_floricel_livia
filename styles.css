@@ -301,6 +301,10 @@
         margin-left: auto;
     }
 
+    .all-accomodations .most-popular{
+        border-radius: 0px;
+    }
+
     .best-hotels1 h4{
         margin-top: 3px;
         margin-bottom: 14px;
@@ -327,10 +331,10 @@
 
     .marseille-accommodations h2 {
         font-size: 20px;
-        display: flex;
-        justify-content: center;
-        margin-left: auto;
+        justify-content: flex-start;
+        margin-left: 1%;;
         margin-right: auto;
+        margin-bottom: -1%;
     }
 
     #showmore {
@@ -353,6 +357,11 @@
 
     .hotels_holder {
         justify-content: center;
+    }
+
+    .activities-holder h2 {
+        margin-bottom: -1%;
+        margin-top: -2%;
     }
 
     .activities-gallery {
