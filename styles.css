@@ -253,10 +253,6 @@
         flex-direction: column;
     }
 
-    .dreamvacation h1 {
-        font-size: 20px;
-    }
-
     .search input{
         display: flex;
         justify-content: center;
@@ -627,7 +623,6 @@ header {
 }
 
    .hotel1 {
-    position: relative;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -649,10 +644,33 @@ header {
     object-fit: cover;
 }
 
-.best-hotels1 figcaption{
-    position: absolute;
+.best-hotels1 h4 p {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;}
+    
+.best-hotels1 figcaption {
     background-color: white;
     width: 100%;
+}
+
+.best-hotels1 h4 {
+    font-weight: 700;
+    font-size: larger;
+    margin-top: 3px;
+}
+
+.best-hotels h4 {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.best-hotels1 span {
+    padding-bottom: 5px;
+}
+
+.best-hotels span {
+    padding-top: 10%;
 }
 
 .review-hotel a {
@@ -662,7 +680,6 @@ header {
 
 .best-hotels1 p{
     margin-top: -9px;
-    padding-bottom: -2%;
 }
 
 
@@ -684,7 +701,6 @@ header {
 }
 
 .hotel {
-    position: relative;
     border-radius: 20px;
     padding: 5px;
     box-shadow: 1px 1px #c7c7c7;
@@ -697,14 +713,12 @@ header {
 
 .popular-image {
     height: 180px;
-    position: relative;
 }
 
 .best-hotels figcaption{
     float: right;
     width: 60%;
     height: 100%;
-    position: absolute;
     background-color: white;
 }
 
@@ -749,7 +763,6 @@ header {
 
   .best-hotels figcaption {
     margin-left: 45%;
-    position: absolute;
     height: 100%;
     width: 60%;
 }
@@ -865,11 +878,9 @@ header {
     width: 100%;
 }
 
-.name-activity h2 {
-    padding-bottom: 15px;
-    padding-top: 5px;
-    padding-left: 30px;
-    width: 100%;
+.name-activity h4 {
+    font-weight: 700;
+    font-size: larger;
 }
 
 /*footer */
