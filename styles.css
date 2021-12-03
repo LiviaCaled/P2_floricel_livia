@@ -950,7 +950,7 @@ header {
 
 
 }
-
+/* Small devices (mobile screens, 768px and down) */
     @media only screen and (min-width: 402px) and (max-width: 768px) {
         header {
             width: 100%;
@@ -1130,72 +1130,4 @@ header {
 
     }
 
-    /*@media only screen and (min-width: 769px) and (max-width: 922px) {
-        .nav-list li a:hover {
-            border-top: 2px #0065FC solid;
-            padding-top: 20px;
-            color: #0065FC;
-        }
-    
-        .nav-list li {
-            margin-top: 5%;
-        }
-    
-        .search {
-            width: 90%;
-        }
-    
-        .all-accomodations {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-        }
-    
-        .hotels_holder {
-            display: flex;
-            flex-wrap: wrap;
-        }
-    
-        .most-popular .text-icon {
-            display: flex;
-            justify-content: space-evenly;
-            padding-right: 5%;
-        }
-    
-        .activities-holder {
-            margin-right: 2%;
-            margin-left: 2%;
-        }
-    
-        .activities-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    
-        .filters-holder {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            max-width: 100%;
-        }
-    
-        .filters {
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            max-width: 100%;
-        }
-    
-        .filters-holder h2 {
-            padding-left: 1%;
-        }
-    
-        .footer-holder {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content:start;
-        }
-    
-    } */
 
