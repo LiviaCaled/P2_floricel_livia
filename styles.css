@@ -985,7 +985,7 @@ header {
     }
 
     .act_box_big {
-        width: 330px;
+        min-width: 330px;
     }
 
     .act_box_small_holder .act_box_small{
