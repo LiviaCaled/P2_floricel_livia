@@ -206,7 +206,7 @@ header {
   }
   
 
-#showmore h3{
+#showmore h3 {
       padding-bottom: 2%;
       padding-top: 2%;
       padding-left: 3%;
@@ -216,7 +216,7 @@ header {
     text-decoration: none;
     color: black;
 }
-  .hotels_holder{
+  .hotels_holder {
     display: flex;
     flex-wrap: wrap;
 }
@@ -246,7 +246,8 @@ header {
 .best-hotels1 h4 p {
     display: flex;
     align-items: flex-start;
-    flex-direction: column;}
+    flex-direction: column;
+}
     
 .best-hotels1 figcaption {
     background-color: white;
@@ -277,7 +278,7 @@ header {
     color: black;
 }
 
-.best-hotels1 p{
+.best-hotels1 p {
     margin-top: -9px;
 }
 
@@ -314,7 +315,7 @@ header {
     height: 180px;
 }
 
-.best-hotels figcaption{
+.best-hotels figcaption {
     float: right;
     width: 60%;
     height: 100%;
@@ -485,7 +486,7 @@ header {
 /*footer */
 
 
-.footer-holder{
+.footer-holder {
     display: flex;
     margin-top: 3%;
     width: 100%;
@@ -767,7 +768,7 @@ header {
         min-width: 100%;
     }
 
-    .bookiheader ul{
+    .bookiheader ul {
         border-bottom: 3px solid #f2f2f2;
         padding-bottom: 10px;
     }
