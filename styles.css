@@ -540,7 +540,7 @@ header {
 
     .nav-list li a:hover {
         border-top: 3px #0065FC solid;
-        padding-top: 20px;
+        padding-top: 25px;
         color: #0065FC;
     }
 
