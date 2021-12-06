@@ -41,11 +41,7 @@ header {
     margin-top: 1%;
 }
 
-.accomodations {
-    color: black;
-}
-
-.activities {
+.list-header {
     color: black;
 }
 
@@ -53,7 +49,7 @@ header {
     color: #0065FC;
 }
 
-.nav-list li a {
+.nav-list a {
     text-decoration: none;
 }
 
@@ -486,6 +482,11 @@ header {
 .name-activity h4 {
     font-weight: 700;
     font-size: larger;
+}
+
+.name-activity a {
+    text-decoration: none;
+    color: black;
 }
 
 /*footer */
