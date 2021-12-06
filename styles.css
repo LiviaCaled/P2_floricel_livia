@@ -41,6 +41,14 @@ header {
     margin-top: 1%;
 }
 
+.accomodations {
+    color: black;
+}
+
+.activities {
+    color: black;
+}
+
 .list-header {
     color: black;
 }
@@ -539,7 +547,7 @@ header {
 /* Large devices (laptops and desktops, 992 and up) */
 @media only screen and (min-width: 1201px) {
 
-    .nav-list li a:hover {
+    .nav-list a:hover {
         border-top: 3px #0065FC solid;
         padding-top: 25px;
         color: #0065FC;
@@ -568,7 +576,7 @@ header {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .nav-list li a:hover {
+    .nav-list a:hover {
         border-top: 2px #0065FC solid;
         padding-top: 10px;
         color: #0065FC;
@@ -596,9 +604,9 @@ header {
 
 /* Medium devices (tablets - 769px and up) */
 @media only screen and (min-width: 769px) and (max-width: 991px) {
-    .nav-list li a:hover {
+    .nav-list a:hover {
         border-top: 2px #0065FC solid;
-        padding-top: 10px;
+        padding-top: 20px;
         color: #0065FC;
     }
 
@@ -619,8 +627,12 @@ header {
         display: flex;
         flex-direction: row;
         list-style-type: none;
-        justify-content: space-evenly;
+        justify-content: space-between;
         margin-top: 1%;
+    }
+
+    .list-header {
+        margin-left: 10%;
     }
 
     .search {
@@ -801,7 +813,7 @@ header {
         padding: 0px;
     }
 
-    .bookiheader ul {
+    .bookiheader nav {
         border-bottom: 3px solid #f2f2f2;
     }
 
@@ -810,7 +822,7 @@ header {
         align-items: center;
     }
 
-    li.list-header.active {
+    .list-header.active {
         border-bottom: solid 3px #0065FC;
         padding-bottom: 15px;
     }
